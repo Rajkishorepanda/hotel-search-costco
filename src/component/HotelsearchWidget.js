@@ -5,24 +5,33 @@ import hotelIcon  from '../images/hotel.svg'
 import cruiseIcon  from '../images/cruisesvg.svg'
 import rentalCarIcon  from '../images/rentalcar.svg'
 import '../style/hotelsearchwidget.css'
-import TravelOption from "./TravelOption";
-import InputField from "./InputField";
 
+const TravelOption = ({ src, alt, label, className }) => (
+  <div className={`travel-option ${className}`}>
+    <img src={src} alt={alt} className="travel-image" />
+    <p className="travel-label">{label}</p>
+  </div>
+);
 
-
-
-
+const InputField = ({ id, label, placeholder, type = "text" }) => (
+  <div className="input-field">
+    <label htmlFor={id} className="input-label">
+      {label}
+    </label>
+    <input id={id} type={type} className="input" placeholder={placeholder} aria-label={label} />
+  </div>
+);
 
 function HotelsearchWidget() {
   return (
     <>
       <section className="main-section">
-        <header className="travel-options">
+       {/* <header className="travel-options">
           <TravelOption src={packageicon} alt="Packages" label="Packages" />
           <TravelOption src={hotelIcon} alt="Hotels" label="Hotels" className="highlighted" />
           <TravelOption src={cruiseIcon} alt="Cruises" label="Cruises" />
           <TravelOption src={rentalCarIcon} alt="Rental Cars" label="Rental Cars" />
-        </header>
+        </header> */} 
         
         <hr className="divider" />
       

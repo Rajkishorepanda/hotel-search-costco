@@ -59,6 +59,11 @@
     font-weight: 400;
   }
 
+  #destination:focus {
+   
+    color: white; /* Text color when dropdown is focused */
+  }
+
   .input {
     margin-top: 5px;
     padding: 10px 15px;

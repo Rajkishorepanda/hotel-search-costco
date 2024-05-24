@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import HotelsearchWidget from './component/HotelsearchWidget';
+import OptionsSearchWidget from './component/OptionsSearchWidget';
 import NavBar from './component/navBar';
 
 function App() {
@@ -8,10 +7,13 @@ function App() {
     <div className='App'>
     <div>
       <NavBar/>
+      
     </div>
     
    <div className='app-container'>
-       <HotelsearchWidget/>
+   <OptionsSearchWidget/>
+      {/*<HotelsearchWidget/>
+       <CruiseSearchWidget/> */} 
 </div>
 </div>
 
